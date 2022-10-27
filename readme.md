@@ -10,4 +10,16 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+### Installing Docker:
+
+Follow the link to get to the Docker documentation https://docs.docker.com/get-docker/ and how to install it for your OS.
+
+After the installation is complete you can check that everything is OK using ```docker -v``` and ```docker-compose -v```.
+
+### Starting the docker instance:
+
+From the project directory run: ```docker-compose up```. After fetching and unpacking all the necessary files go to your browser and load http://localhost:3000/api/ping
+
+If you're able to see ```{"msg":"Pong! Seems like Everythink is working, great job!"}``` it means the app is now running!
+
+Once it is set up go to ```http://localhost:3001/register to register```  to set up a new user.
